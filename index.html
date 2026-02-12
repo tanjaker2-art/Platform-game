@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="ui-layer">
+            <div id="score">Score: 0</div>
+            <div id="start-screen" class="screen active">
+                <h1>Block Runner</h1>
+                <p>Press SPACE or W to Jump</p>
+                <p>Press S or DOWN to Duck</p>
+                <p>Press A or D to Move Left/Right</p>
+                <p>Press ANY KEY to Start</p>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h1>Game Over</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Press ANY KEY to Restart</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
