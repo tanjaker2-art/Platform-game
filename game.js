@@ -112,7 +112,7 @@ class Obstacle {
         this.isFloating = Math.random() < 0.3;
 
         if (this.isFloating) {
-            this.y = canvas.height - 50 - 45 - this.height; // Floating above ground
+            this.y = canvas.height - 50 - 35 - this.height; // Lowered to force duck (was 45)
             this.color = '#E91E63'; // Pink/Red for floating
         } else {
             this.y = canvas.height - 50 - this.height; // On ground

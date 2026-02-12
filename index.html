@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometric Runner</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="game-container">
         <canvas id="gameCanvas" width="800" height="400"></canvas>
@@ -13,10 +15,21 @@
             <div id="score">Score: 0</div>
             <div id="start-screen" class="screen active">
                 <h1>Block Runner</h1>
-                <p>Press SPACE or W to Jump</p>
-                <p>Press S or DOWN to Duck</p>
-                <p>Press A or D to Move Left/Right</p>
-                <p>Press ANY KEY to Start</p>
+
+                <div class="start-legend">
+                    <div class="legend-row">
+                        <div class="swatch obstacle-swatch"></div> <span class="legend-text">JUMP</span>
+                        <div class="swatch floating-swatch"></div> <span class="legend-text">DUCK</span>
+                    </div>
+                    <div class="legend-row">
+                        <div class="swatch gold-swatch"></div> <span class="legend-text">+50</span>
+                        <div class="swatch red-swatch"></div> <span class="legend-text">FAST</span>
+                        <div class="swatch cyan-swatch"></div> <span class="legend-text">SLOW</span>
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px;">Press W/SPACE to Jump &bull; S/DOWN to Duck</p>
+                <p class="blink">Press ANY KEY to Start</p>
             </div>
             <div id="game-over-screen" class="screen">
                 <h1>Game Over</h1>
@@ -27,4 +40,5 @@
     </div>
     <script src="game.js"></script>
 </body>
+
 </html>
